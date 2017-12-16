@@ -2,8 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:mvc="http://www.springframework.org/schema/mvc"
-	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
@@ -17,8 +16,13 @@
 
 
 
-<!-- <bean id="car2" class="com.jm3003.learn.spring.core.HondaCity" /> -->
-<!-- <bean id="car" class="com.jm3003.learn.spring.core.core.HondaAmaze" /> -->
-<bean id="car" class="com.jm3003.learn.spring.core.HondaJazz" />
-
+	<!-- <bean id="car2" class="com.jm3003.learn.spring.core.HondaCity" /> -->
+	<!-- <bean id="car" class="com.jm3003.learn.spring.core.core.HondaAmaze" 
+		/> -->
+	<bean id="car" class="com.jm3003.learn.spring.core.HondaJazz">
+	
+	<constructor-arg ref="ms" />
+	
+	</bean>
+	<bean id="ms" class="com.jm3003.learn.spring.core.SonyMusicSystem" />
 </beans>
