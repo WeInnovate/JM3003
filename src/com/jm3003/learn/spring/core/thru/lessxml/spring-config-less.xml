@@ -14,15 +14,6 @@
                            http://www.springframework.org/schema/aop
 	http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-
-
-	<!-- <bean id="car2" class="com.jm3003.learn.spring.core.HondaCity" /> -->
-	<!-- <bean id="car" class="com.jm3003.learn.spring.core.core.HondaAmaze" 
-		/> -->
-	<bean id="car" class="com.jm3003.learn.spring.core.HondaJazz">
-	
-	<constructor-arg ref="ms" />
-	
-	</bean>
-	<bean id="ms" class="com.jm3003.learn.spring.core.SonyMusicSystem" />
+<context:component-scan base-package="com.jm3003.learn.spring.core.thru.lessxml" />
+ 
 </beans>

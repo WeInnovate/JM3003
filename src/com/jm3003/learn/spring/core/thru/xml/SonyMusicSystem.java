@@ -1,4 +1,4 @@
-package com.jm3003.learn.spring.core;
+package com.jm3003.learn.spring.core.thru.xml;
 
 public class SonyMusicSystem implements MusicSystem {
 
@@ -6,5 +6,4 @@ public class SonyMusicSystem implements MusicSystem {
 	public void playTheMusic() {
 		System.out.println("Playing music on SonyMusicSystem");
 	}
-
 }

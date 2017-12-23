@@ -1,4 +1,4 @@
-package com.jm3003.learn.spring.core;
+package com.jm3003.learn.spring.core.thru.xml;
 
 public class HondaAmaze implements Car {
 	
